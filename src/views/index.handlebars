@@ -1,13 +1,26 @@
-<div>
+{{!-- <div>
     Todo listo para trabajar con sockets
 </div>
 <p id="message">
     
-</p>
+</p> --}}
+
+<h1>Bienvenido al Chat</h1>
+
+<div>
+    <input type="text" placeholder="Ingresa tu mensaje" id="chatBox">
+    <input type="submit" value="Enviar mensaje"></input>
+</div>
+<div>
+    <p id="messageLogs"></p>
+</div>
+
 <!--
     importo dependencia de socket io
     importo mi index.js del public
+    importo cdn de sweetalert
 -->
 
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/index.js"></script>
